@@ -173,24 +173,29 @@ body {
 /* Contact form style */
 .contact-form {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   background-color: var(--clr-accent);
   border-radius: 1rem;
   border: none;
+  width: 100%;
 }
 
 legend {
-  float: left;
-  width: 100%;
-  font-size: var(--fs-900);
+  margin-inline: auto;
+  position: absolute;
+  top: 5px;
+  /*float: left;
+  width: 100%;*/
+  font-size: var(--fs-700);
   font-weight: var(--fw-semi-bold);
-  padding-left: 2rem;
+  /*padding-left: 2rem;*/
 }
 
 .label {
   color: var(--clr-light);
-  font-size: var(--fs-700);
+  font-size: var(--fs-400);
   font-weight: var(--fw-semi-bold);
 }
 
@@ -212,6 +217,7 @@ input,
 textarea {
   border: none;
   resize: none;
+  width: 100%;
 }
 
 input[type=checkbox] {
@@ -219,7 +225,25 @@ input[type=checkbox] {
   margin-inline: 0.5rem;
 }
 
+@media (min-width: 32em) {
+legend {
+  position: relative;
+  font-size: var(--fs-900);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  left: -7.5rem;
+  top: 1.5rem;
+}
+
+  .label {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-semi-bold);
+  }
+
+}
+
 @media (min-width: 50em) {
+
 
   .even-columns {
   grid-auto-flow: column;
