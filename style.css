@@ -225,6 +225,10 @@ input[type=checkbox] {
   width: 1.5rem;
 }
 
+input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 32em) {
 legend {
   position: relative;
