@@ -221,8 +221,8 @@ textarea {
 }
 
 input[type=checkbox] {
-  transform: scale(2);
-  margin-inline: 0.5rem;
+  transform: scale(1.7);
+  width: 1.5rem;
 }
 
 @media (min-width: 32em) {
